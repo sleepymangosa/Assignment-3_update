@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Numbers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main" class="container" role="main">
+
+        <h1>Three Number Calculator</h1>
+
+        <label for="num1">First Number:</label>
+        <input id="num1" type="number" placeholder="Enter first number">
+
+        <label for="num2">Second Number:</label>
+        <input id="num2" type="number" placeholder="Enter second number">
+
+        <label for="num3">Third Number:</label>
+        <input id="num3" type="number" placeholder="Enter third number">
+
+        <button onclick="calculate()" aria-label="Calculate results">Calculate</button>
+
+        <div id="output" aria-live="polite"></div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

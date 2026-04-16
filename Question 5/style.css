@@ -1,0 +1,101 @@
+/* Reset a bit of default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container (main card) */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    grid-column: span 2;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Inputs */
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Input focus effect */
+input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+/* Button */
+button {
+    grid-column: span 2;
+    padding: 12px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover */
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Output box */
+#output {
+    grid-column: span 2;
+    margin-top: 10px;
+    background: #f1f3f9;
+    padding: 12px;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Focus accessibility */
+button:focus,
+input:focus {
+    outline: 3px solid #ff9800;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+}
